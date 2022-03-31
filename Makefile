@@ -98,7 +98,7 @@ sequence_training_w_imagenet:
 			--num-folds=${FOLDS}
 
 ######## Evaluation ###########################################################
-evaluate:
+evaluation:
 	PYTHONHASHSEED=0 ${PYTHON} -m evaluate \
 			--input-dir=${EVAL_INPUT_DIR} \
 			--window=${WINDOW} \
@@ -126,6 +126,6 @@ clean:
 		encodings_w_imagenet \
 		sequence_training_w_nih \
 		sequence_training_w_imagenet \
-		evaluate \
+		evaluation \
 		tests \
 		clean
