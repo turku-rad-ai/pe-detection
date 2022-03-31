@@ -24,6 +24,8 @@ Link to the paper: \
 }
 ```
 
+The study was conducted by University of Turku and Turku University Hospital in collaboration with Reaktor, Auria Clinical Informatics and Auria Biobank.
+
 ## Requirements
 
 Install requirements:
