@@ -1,0 +1,29 @@
+augmentations:
+  tfxs: # these map directly to augment_op functions
+    [
+      ["rotate_m5", "tr_y20", "zoom"],
+      ["tr_x20", "rotate_5"],
+      ["tr_ym15", "rotate_3"],
+      ["tr_x20", "tr_ym20"],
+      ["tr_xm20", "tr_y20"],
+      ["tr_x10", "zoom"],
+      "rotate_5",
+      "rotate_m5",
+      "elastic_transform",
+      "zoom_1_15",
+      "zoom_1_075",
+      "blur",
+      "gaussian_noise",
+      "tr_ym15",
+    ]
+  target_w: 386
+  target_h: 386
+
+model:
+  model_dir: "./generated/models"
+  plot_dir: "./generated/plots"
+  encoding_dir: "./generated/encodings"
+  encoding_dim: 64
+  encoding_layer_idx: -2
+  encoding_csv: "encoding_filenames.csv"
+  sequence_num_slices: 96
